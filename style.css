@@ -1,0 +1,28 @@
+#flash{
+	width: 100%;
+	opacity: 0;
+	height: 0px;
+	line-height: 40px;
+	text-align: center;
+	-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#flash.show{
+	opacity: 1;
+	height: 40px;
+}
+
+#flash.info{
+	background-color: rgba(173, 216, 230, .5);
+}
+
+#flash.error{
+	background-color: rgba(178, 34, 34, .5);
+}
+
+#flash.success{
+	background-color: rgba(0, 128, 0, .5)
+}

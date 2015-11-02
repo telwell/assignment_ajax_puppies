@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>AJAX Puppy Shelter</title>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div id="flash"></div>
+
+		<h2>The AJAX Puppy Shelter</h2>
+
+		<h3>Register a New Puppy</h3>
+		<form id="register-puppy-form" action="/" method="POST">
+			<label for="name"></label>
+			<input type="text" name="name" id="name">
+
+			<label for="breed"></label>
+			<select name="breed" id="breed-select"></select>
+			
+			<input type="submit" name="submit" value="Register Puppy">
+
+		</form>
+
+		<h3>Our Puppies:</h3>
+		<a href="#" id="refresh-puppy-list">Refresh Puppy List</a>
+		<ul id="puppy-list">
+
+		</ul>
+	</body>
+
+	<!-- Using this awesome Timeago jQuery plugin http://timeago.yarp.com -->
+	<script src="http://timeago.yarp.com/jquery.timeago.js"></script>
+	<script src="script.js"></script>
+</html>
